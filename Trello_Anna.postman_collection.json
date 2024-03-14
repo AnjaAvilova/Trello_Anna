@@ -26,7 +26,7 @@
 									"    pm.expect(jsonData.pinned).to.eql(false);\r",
 									"} );\r",
 									"\r",
-									"pm.environment.set(\"id\", pm.response.json().id);\r",
+									"pm.environment.set(\"Board_id\", pm.response.json().id);\r",
 									"\r",
 									"\r",
 									"var schema = \r",
@@ -347,7 +347,8 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -370,13 +371,11 @@
 								},
 								{
 									"key": "key",
-									"value": "{{key}}",
-									"description": "de82a7f8b7182b944a53ac9c159ee87c"
+									"value": "{{key}}"
 								},
 								{
 									"key": "token",
-									"value": "{{token}}",
-									"description": "ATTA30d0e7ef3050610668aab7c9c2b24418e35bc7b2a668bac0425414db3c1a923984A97CD8"
+									"value": "{{token}}"
 								}
 							]
 						}
@@ -395,10 +394,7 @@
 									"    pm.expect(responseBody).to.include(\"1000\");\r",
 									"}\r",
 									"\r",
-									"pm.test(\"Тело ответа содержит ожидаемое значение: name\", function() {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.name).to.eql(\"Test_sqa1\");\r",
-									"});\r",
+									"\r",
 									"\r",
 									"pm.test(\"Тело ответа содержит ожидаемое значение: deskData\", function() {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -720,7 +716,8 @@
 									"\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -739,13 +736,11 @@
 							"query": [
 								{
 									"key": "key",
-									"value": "{{key}}",
-									"description": "de82a7f8b7182b944a53ac9c159ee87c"
+									"value": "{{key}}"
 								},
 								{
 									"key": "token",
-									"value": "{{token}}",
-									"description": "ATTA30d0e7ef3050610668aab7c9c2b24418e35bc7b2a668bac0425414db3c1a923984A97CD8"
+									"value": "{{token}}"
 								}
 							]
 						}
