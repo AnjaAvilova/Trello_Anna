@@ -27,8 +27,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run tests and reporting
         run: |
-          newman run Trello_Anna.postman_collection.json -e Trello_Enviroment_Anna.postman_environment.json
-          --reporters cli,htmlextra --reporter-htmlextra-export Trello_report.html
+          'newman run Trello_Anna.postman_collection.json -e Trello_Enviroment_Anna.postman_environment.json
+          --reporters cli,htmlextra --reporter-htmlextra-export Trello_report.html'
 
       # Проверка создания файла
       - name: Check report file
