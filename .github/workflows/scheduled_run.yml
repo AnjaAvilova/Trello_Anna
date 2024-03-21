@@ -31,5 +31,5 @@ jobs:
           --reporters cli,htmlextra --reporter-htmlextra-export Trello_report.html
 
       # Проверка создания файла
-      -name: Check report file
-       run: 'ls'
+      - name: Check report file
+        run: 'ls'
