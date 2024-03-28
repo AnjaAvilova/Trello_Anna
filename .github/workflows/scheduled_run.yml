@@ -31,3 +31,8 @@ jobs:
       # Проверка создания файла
       - name: Check report file
         run: 'ls'
+
+      # Прикрепляется ли артифакт к тестовому прогону
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.3.1
+             
