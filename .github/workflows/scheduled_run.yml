@@ -45,8 +45,8 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 465
-          username: ${{secrets.MAIL_USERNAME}}
-          password: ${{secrets.MAIL_PASSWORD}}
+          username: ${{secrets.Анна_Авилова}}
+          password: ${{secrets.mArk8294ova}}
           subject: Github Actions job result
           to: annaavilova2@gmail.com
           from:
