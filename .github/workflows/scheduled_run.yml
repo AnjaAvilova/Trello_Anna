@@ -45,9 +45,9 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 465
-          username: ${{secrets.Anna_Avilova}}
-          password: ${{secrets.mArk8294ova}}
-          subject: Github Actions job result
+          username: ${{secrets.MAIL_USERNAME}}
+          password: ${{secrets.MAIL_PASSWORD}}
+          subject: TEST REPORT
           to: annaavilova2@gmail.com
-          from:
-          attachments: attachments.zip,git.diff,./dist/static/*.js      
+          from: GitHub Actions <actions@example.com>
+          attachments: Trello_report.html     
